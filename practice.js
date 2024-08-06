@@ -87,6 +87,7 @@ multiply(4, 3, function (answer) {
 */
 
 //Code Here
+const contains = (arr, string, cb) => cb(arr.includes(string));
 
 // Do not edit the code below.
 // Your function is called here
