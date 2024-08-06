@@ -36,7 +36,7 @@ const names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 
 // Your function is called here
 first(names, function (firstName) {
-  console.log('The first name in names is ' + firstName);
+  // console.log('The first name in names is ' + firstName);
   return firstName;
 });
 // Do not edit the code above.
@@ -55,7 +55,7 @@ const last = (arr, cb) => cb(arr[arr.length - 1]);
 // Do not edit the code below.
 // Your function is called here
 last(names, (lastName) => {
-  console.log('The last name in names is ' + lastName);
+  // console.log('The last name in names is ' + lastName);
   return lastName;
 });
 // Do not edit the code above.
@@ -73,7 +73,7 @@ const multiply = (num1, num2, cb) => cb(num1 * num2);
 // Do not edit the code below.
 // Your function is called here
 multiply(4, 3, function (answer) {
-  console.log('The answer is ' + answer); //should console.log 12
+  // console.log('The answer is ' + answer); //should console.log 12
 });
 // Do not edit the code above.
 
@@ -93,9 +93,9 @@ const contains = (arr, string, cb) => cb(arr.includes(string));
 // Your function is called here
 contains(names, 'Colt', (result) => {
   if (result === true) {
-    console.log('Colt is in the array');
+    // console.log('Colt is in the array');
   } else {
-    console.log('Colt is not in the array');
+    // console.log('Colt is not in the array');
   }
 });
 // Do not edit the code above.
@@ -113,7 +113,7 @@ const each = (arr, cb) => arr.map((item, index) => cb(item, index));
 // Do not edit the code below.
 // Your function is called here
 each(names, (item, index) => {
-  console.log('The item in the ' + index + ' position is ' + item);
+  // console.log('The item in the ' + index + ' position is ' + item);
 });
 // Do not edit the code above.
 
@@ -126,6 +126,12 @@ each(names, (item, index) => {
 */
 
 // Code here
+// const getUserById = (arr, id, cb) => {
+//   return cb(arr.filter((el) => {
+//     return el.id === id;
+//   })[0]) // [0] is required because the filter is returning an array but the Object in the array is what is needed
+// }
+const getUserById = (arr, id, cb) => cb(arr.filter((el) => el.id === id)[0])
 
 // Do not edit the code below.
 const users = [
@@ -151,14 +157,14 @@ const users = [
 
 // Your function is called here
 getUserById(users, '16t', (user) => {
-  console.log(
-    'The user with the id 16t has the email of ' +
-      user.email +
-      ' the name of ' +
-      user.name +
-      ' and the address of ' +
-      user.address,
-  );
+  // console.log(
+  //   'The user with the id 16t has the email of ' +
+  //     user.email +
+  //     ' the name of ' +
+  //     user.name +
+  //     ' and the address of ' +
+  //     user.address,
+  // );
 });
 // Do not edit the code above.
 
