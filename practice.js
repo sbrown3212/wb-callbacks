@@ -215,7 +215,7 @@ const formalGreeting = (names) => names.map((name) => `Hello, ${name}`)
 // Remember that by default, JavaScript sorts by converting all items to strings. So you
 // will need to provide a compare function.
 
-// REPLACE THIS WITH YOUR CODE
+const sortNumbers = (arr) => arr.sort((a, b) => a - b)
 
 /// /////// PROBLEM 11 //////////
 
