@@ -108,6 +108,7 @@ contains(names, 'Colt', (result) => {
 */
 
 //Code Here
+const each = (arr, cb) => arr.map((item, index) => cb(item, index));
 
 // Do not edit the code below.
 // Your function is called here
