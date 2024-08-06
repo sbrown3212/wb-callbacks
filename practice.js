@@ -29,6 +29,7 @@
 */
 
 // Code Here
+const first = (arr, cb) => cb(arr[0]);
 
 // Do not edit the code below.
 const names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
