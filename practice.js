@@ -193,7 +193,9 @@ const evens = (arr) => arr.filter((el) => el % 2 == 0)
 //
 // Make sure to use an arrow function combined with the filter method (not a for loop).
 
-const startWithLetterA = (arr) => arr.filter((el) => el.toLowerCase() === `a`)
+const startWithLetterA = (arr) => arr.filter((el) => el[0].toLowerCase() === `a`)
+
+console.log(startWithLetterA(['Apple', 'acorn', 'banana', 'peach']))
 
 /// /////// PROBLEM 9 //////////
 
@@ -203,7 +205,7 @@ const startWithLetterA = (arr) => arr.filter((el) => el.toLowerCase() === `a`)
 //
 // Make sure to use arrow functions combined with the map method.
 
-// REPLACE THIS WITH YOUR CODE
+const formalGreeting = (names) => names.map((name) => `Hello ${name}`)
 
 /// /////// PROBLEM 10 //////////
 
