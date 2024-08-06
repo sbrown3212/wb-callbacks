@@ -195,7 +195,7 @@ const evens = (arr) => arr.filter((el) => el % 2 == 0)
 
 const startWithLetterA = (arr) => arr.filter((el) => el[0].toLowerCase() === `a`)
 
-console.log(startWithLetterA(['Apple', 'acorn', 'banana', 'peach']))
+// console.log(startWithLetterA(['Apple', 'acorn', 'banana', 'peach']))
 
 /// /////// PROBLEM 9 //////////
 
@@ -262,7 +262,9 @@ const orders = [
   Example: if tax is 0.07, the price afterTax could be calculated like this: afterTax = price * 1.07)
 */
 
-let orderTotals; // Code here
+let orderTotals = orders.map((order) => order.price * (1 + order.tax)); // didn't pass the test when making orderTotals and arrow function
+
+// console.log(orderTotals(orders));
 
 /// /////// PROBLEM 13 //////////
 
@@ -278,7 +280,7 @@ const exampleMenuItems = [
 // Create a function called sortMenuItems which takes in an array of objects like the one above
 // and sorts the array by price from smallest to largest. It should return the sorted array.
 
-// REPLACE THIS WITH YOUR CODE
+const sortMenuItems = (arr) => arr.sort((obj1, obj2) => obj1.price - obj2.price);
 
 /// /////// PROBLEM 14 //////////
 
