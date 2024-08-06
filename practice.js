@@ -290,4 +290,4 @@ const sortMenuItems = (arr) => arr.sort((obj1, obj2) => obj1.price - obj2.price)
 //
 // Make sure to use arrow functions combined with the reduce method.
 
-// REPLACE THIS WITH YOUR CODE
+const productOfArray = (arr) => arr.reduce((acc, el) => acc * el);
