@@ -193,7 +193,7 @@ const evens = (arr) => arr.filter((el) => el % 2 == 0)
 //
 // Make sure to use an arrow function combined with the filter method (not a for loop).
 
-const startWithLetterA = (arr) => 
+const startWithLetterA = (arr) => arr.filter((el) => el.toLowerCase() === `a`)
 
 /// /////// PROBLEM 9 //////////
 
