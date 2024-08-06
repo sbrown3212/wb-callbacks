@@ -68,6 +68,7 @@ last(names, (lastName) => {
 */
 
 //Code Here
+const multiply = (num1, num2, cb) => cb(num1 * num2);
 
 // Do not edit the code below.
 // Your function is called here
