@@ -235,7 +235,7 @@ const employees = [
 ];
 // Do not edit the code above.
 
-// REPLACE THIS WITH YOUR CODE
+const findProgrammer = (employees) => employees.filter((employeeObj) => employeeObj.job === `programmer`)[0];
 
 ////////// PROBLEM 12 //////////
 
