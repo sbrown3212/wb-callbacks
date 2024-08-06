@@ -205,7 +205,7 @@ console.log(startWithLetterA(['Apple', 'acorn', 'banana', 'peach']))
 //
 // Make sure to use arrow functions combined with the map method.
 
-const formalGreeting = (names) => names.map((name) => `Hello ${name}`)
+const formalGreeting = (names) => names.map((name) => `Hello, ${name}`)
 
 /// /////// PROBLEM 10 //////////
 
